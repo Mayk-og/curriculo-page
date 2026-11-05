@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Currículo profissional de Mayk da Silva Santos. Estudante de ADS, desenvolvedor web e Power BI.">
+
+    <title>Mayk da Silva Santos | Portfólio Profissional</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#inicio" class="logo">
+                MAYK<span>.</span>
+            </a>
+
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#formacao">Formação</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+            </nav>
+
+            <button class="btn-print" onclick="window.print()">
+                ↓ Baixar currículo
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero container" id="inicio">
+
+            <div class="hero-content">
+                <span class="status">
+                    <span class="status-dot"></span>
+                    Disponível para estágio
+                </span>
+
+                <p class="intro">Olá, meu nome é</p>
+
+                <h1 id="nome">Mayk da Silva Santos</h1>
+
+                <h2 id="titulo">
+                    Estudante de ADS
+                    <span>& Desenvolvedor Web</span>
+                </h2>
+
+                <p class="hero-description" id="resumo">
+                    Estudante de Análise e Desenvolvimento de Sistemas,
+                    interessado em programação, desenvolvimento web
+                    e análise de dados.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn-primary">
+                        Ver meus projetos
+                    </a>
+
+                    <a href="#contato" class="btn-secondary">
+                        Entrar em contato
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a id="github-link" href="#" target="_blank">GitHub ↗</a>
+                    <a id="whatsapp-link" href="#" target="_blank">WhatsApp ↗</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="profile-circle">
+                    <span id="iniciais">MS</span>
+                </div>
+
+                <h3 id="card-nome">Mayk da Silva Santos</h3>
+                <p id="card-cargo">Desenvolvedor em formação</p>
+
+                <div class="card-divider"></div>
+
+                <div class="profile-info">
+                    <p>📍 <span id="localizacao">Poá, São Paulo</span></p>
+                    <p>🎓 <span>UniPiaget | ADS</span></p>
+                    <p>💻 <span>HTML, CSS, Python e Power BI</span></p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section container" id="sobre">
+
+            <div class="section-heading">
+                <span>01 / APRESENTAÇÃO</span>
+                <h2>Sobre mim</h2>
+            </div>
+
+            <div class="about-card">
+                <p id="sobre-texto"></p>
+
+                <div class="about-stats">
+                    <div>
+                        <strong>ADS</strong>
+                        <span>Graduação em andamento</span>
+                    </div>
+
+                    <div>
+                        <strong>Python</strong>
+                        <span>Programação</span>
+                    </div>
+
+                    <div>
+                        <strong>Power BI</strong>
+                        <span>Visualização de dados</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section container" id="experiencia">
+
+            <div class="section-heading">
+                <span>02 / TRAJETÓRIA</span>
+                <h2>Experiência profissional</h2>
+            </div>
+
+            <div class="timeline" id="experiencias"></div>
+
+        </section>
+
+        <section class="section container" id="formacao">
+
+            <div class="section-heading">
+                <span>03 / EDUCAÇÃO</span>
+                <h2>Formação acadêmica</h2>
+            </div>
+
+            <div class="education-grid" id="formacoes"></div>
+
+        </section>
+
+        <section class="section container" id="habilidades">
+
+            <div class="section-heading">
+                <span>04 / CONHECIMENTOS</span>
+                <h2>Minhas habilidades</h2>
+            </div>
+
+            <div class="skills-grid" id="habilidades-lista"></div>
+
+        </section>
+
+        <section class="section container" id="projetos">
+
+            <div class="section-heading">
+                <span>05 / PORTFÓLIO</span>
+                <h2>Projetos em destaque</h2>
+            </div>
+
+            <div class="projects-grid" id="projetos-lista"></div>
+
+        </section>
+
+        <section class="section container" id="cursos">
+
+            <div class="section-heading">
+                <span>06 / APRENDIZADO</span>
+                <h2>Cursos e certificações</h2>
+            </div>
+
+            <div class="courses-grid" id="cursos-lista"></div>
+
+        </section>
+
+        <section class="section container" id="idiomas">
+
+            <div class="section-heading">
+                <span>07 / IDIOMAS</span>
+                <h2>Idiomas</h2>
+            </div>
+
+            <div class="languages" id="idiomas-lista"></div>
+
+        </section>
+
+        <section class="contact-section" id="contato">
+
+            <div class="container contact-content">
+                <span>VAMOS CONVERSAR?</span>
+
+                <h2>Estou em busca de uma<br>
+                    oportunidade na área de tecnologia.</h2>
+
+                <p>
+                    Se você procura alguém dedicado, com vontade de aprender
+                    e crescer na área de desenvolvimento, vamos conversar!
+                </p>
+
+                <a id="contato-whatsapp" href="#" target="_blank"
+                   class="btn-primary">
+                    Falar comigo pelo WhatsApp ↗
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="ano"></span> Mayk da Silva Santos.
+            Desenvolvido com HTML, CSS e JavaScript.
+        </p>
+    </footer>
+
+</body>
+</html>
